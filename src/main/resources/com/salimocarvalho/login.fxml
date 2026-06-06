@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.salimocarvalho.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-padding: 40; -fx-background-color: #f0f0f0;">
+
+    <Label text="Sistema Financeiro"
+           style="-fx-font-size: 24; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="emailField"
+               promptText="Email"
+               maxWidth="300"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   maxWidth="300"/>
+
+    <Button text="Login"
+            onAction="#handleLogin"
+            maxWidth="300"
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+
+    <Label fx:id="errorLabel"
+           style="-fx-text-fill: red;"/>
+
+</VBox>
